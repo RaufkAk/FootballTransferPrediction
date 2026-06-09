@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Transfer Value Predictor</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <main class="container">
+        <header>
+            <h1>AI Transfer Predictor <span class="badge">V2 Model</span></h1>
+            <p>Predict real-time market values using predictive machine learning.</p>
+        </header>
+
+        <section class="search-section">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search for a player (e.g., Arda Guler)..." autocomplete="off">
+                <div class="search-results hidden" id="searchResults"></div>
+            </div>
+        </section>
+
+        <section class="dashboard hidden" id="dashboard">
+            <div class="grid">
+                <!-- Player Profile Card -->
+                <div class="card profile-card">
+                    <div class="profile-header">
+                        <img src="" alt="Player Image" id="playerImage" class="player-avatar" onerror="this.src='https://ui-avatars.com/api/?name=Player&background=random'">
+                        <div class="profile-info">
+                            <h2 id="playerName">Player Name</h2>
+                            <p id="playerClub">Club</p>
+                            <span class="tag" id="playerPosition">Position</span>
+                        </div>
+                    </div>
+                    
+                    <div class="valuation-block real-val">
+                        <h3>Actual Market Value</h3>
+                        <p class="money" id="actualValue">€0</p>
+                    </div>
+
+                    <div class="valuation-block ai-val">
+                        <h3>AI Predicted Value</h3>
+                        <p class="money highlight" id="aiValue">€0</p>
+                    </div>
+                </div>
+
+                <!-- Simulator Card -->
+                <div class="card simulator-card">
+                    <h2>"What-If" Simulator</h2>
+                    <p class="subtitle">Tweak the stats below to see how the AI dynamically re-evaluates the player's market value.</p>
+                    
+                    <div class="sliders">
+                        <div class="slider-group">
+                            <label>Age <span class="slider-val" id="val-age">25.0</span></label>
+                            <input type="range" id="sim-age" min="16" max="40" step="0.5" value="25">
+                        </div>
+
+                        <div class="slider-group">
+                            <label>Goals in Last 365 Days <span class="slider-val" id="val-recent_goals">10</span></label>
+                            <input type="range" id="sim-recent_goals" min="0" max="60" step="1" value="10">
+                        </div>
+
+                        <div class="slider-group">
+                            <label>Assists in Last 365 Days <span class="slider-val" id="val-recent_assists">5</span></label>
+                            <input type="range" id="sim-recent_assists" min="0" max="40" step="1" value="5">
+                        </div>
+
+                        <div class="slider-group">
+                            <label>Contract Years Left <span class="slider-val" id="val-contract">2.0</span></label>
+                            <input type="range" id="sim-contract" min="0" max="7" step="0.5" value="2">
+                        </div>
+                        
+                        <div class="slider-group">
+                            <label>Career Minutes Played <span class="slider-val" id="val-minutes">10000</span></label>
+                            <input type="range" id="sim-minutes" min="0" max="60000" step="500" value="10000">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
