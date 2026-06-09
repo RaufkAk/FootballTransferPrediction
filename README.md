@@ -16,7 +16,7 @@ An end-to-end Machine Learning web application designed to predict and simulate 
 
 Here is a quick demonstration of the web application interface and the real-time "What-If" simulator in action:
 
-[![Watch the Demo Video](video_cover.png)](app_demo.mp4)
+[![Watch the Demo Video](video_cover.png)](https://github.com/RaufkAk/FootballTransferPrediction/raw/main/app_demo.mp4)
 
 ---
 
