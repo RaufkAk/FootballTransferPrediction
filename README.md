@@ -16,8 +16,8 @@ An end-to-end Machine Learning web application designed to predict and simulate 
 
 Here is a quick demonstration of the web application interface and the real-time "What-If" simulator in action:
 
-<video src="https://github.com/RaufkAk/FootballTransferPrediction/raw/main/app_demo.mov" width="100%" controls>
-  Tarayıcınız video oynatmayı desteklemiyor. Videoyu doğrudan izlemek için <a href="app_demo.mov">buraya tıklayın</a>.
+<video src="https://github.com/RaufkAk/FootballTransferPrediction/raw/main/app_demo.mp4" width="100%" controls>
+  Tarayıcınız video oynatmayı desteklemiyor. Videoyu doğrudan izlemek için <a href="app_demo.mp4">buraya tıklayın</a>.
 </video>
 
 ---
