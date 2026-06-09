@@ -16,7 +16,7 @@ An end-to-end Machine Learning web application designed to predict and simulate 
 
 Here is a quick demonstration of the web application interface and the real-time "What-If" simulator in action:
 
-<video src="app_demo.mov" width="100%" controls></video>
+[▶️ **Click here to watch the Demo Video**](app_demo.mov)
 
 ---
 
