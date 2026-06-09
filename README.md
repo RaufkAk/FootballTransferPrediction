@@ -12,6 +12,14 @@ An end-to-end Machine Learning web application designed to predict and simulate 
 
 ---
 
+## 🎬 Demo
+
+Here is a quick demonstration of the web application interface and the real-time "What-If" simulator in action:
+
+<video src="app_demo.mov" width="100%" controls></video>
+
+---
+
 ## 🛠️ Technology Stack
 
 *   **Backend:** [FastAPI](https://fastapi.tiangolo.com/) (Python), Pandas, NumPy, Scikit-Learn, Joblib, Uvicorn
